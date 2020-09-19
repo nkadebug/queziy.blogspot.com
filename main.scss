@@ -57,6 +57,7 @@ body {
 
 .question {
   @extend .card-body;
+  @extend .font-weight-bold;
 }
 
 .options {

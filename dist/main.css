@@ -9681,7 +9681,7 @@ button.bg-dark:focus {
   font-weight: 400 !important;
 }
 
-.font-weight-bold, .answer {
+.font-weight-bold, .answer, .question {
   font-weight: 700 !important;
 }
 
