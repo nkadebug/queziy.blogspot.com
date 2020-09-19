@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/nkadebug/quzeiy.blogspot.com/issues"
   },
-  "homepage": "https://github.com/nkadebug/quzeiy.blogspot.com#readme",
-  "dependencies": {
-    "bootstrap": "^4.5.2"
-  }
+  "homepage": "https://github.com/nkadebug/quzeiy.blogspot.com#readme"
 }
