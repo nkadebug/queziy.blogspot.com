@@ -9906,38 +9906,26 @@ body {
 }
 
 /* Loding overlay and spinner -- Start*/
-#overlay {
-  background: white;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  z-index: 1;
-}
-
+#overlay,
 #loading {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#overlay {
+  background: white;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#loading {
   z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.loader {
-  border: 16px solid #f3f3f3;
-  /* Light grey */
-  border-top: 16px solid #3498db;
-  /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
@@ -9948,6 +9936,15 @@ body {
     transform: rotate(360deg);
   }
 }
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
 /* Loding overlay and spinner -- End*/
 /* Post Type Question -- Start */
 /* Post Type Question -- End */
