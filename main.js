@@ -42,11 +42,11 @@ function getHtml(url,cb) {
     console.log("getHtml", "Fetching...", url);
     fetch(url).then(res=>res.text()).then(function (resp) {
       htmlCache[url] = $(resp).filter("#main").html();
-	  cb(htmlCache[url]);
+	  if(typeOf(cb) == "function")cb(htmlCache[url]);
     });
   } else {
     console.log("getHtml", "Cached", url);
-    cb(htmlCache[url]);
+    if(typeOf(cb) == "function")cb(htmlCache[url]);
   }
 }
 
