@@ -1,0 +1,32 @@
+// Required
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// Optional
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/list-group';
+@import '../node_modules/bootstrap/scss/pagination';
+@import '../node_modules/bootstrap/scss/card';
+
+
+.question-container {
+  @extend .card;
+}
+
+.question {
+  @extend .card-body;
+}
+
+.options {
+  @extend .list-group;
+}
+
+.option {
+  @extend .list-group-item;
+}
+
+.solution {
+  @extend .card-body;
+}

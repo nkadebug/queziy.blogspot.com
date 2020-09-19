@@ -1,0 +1,22 @@
+{
+  "name": "quzeiy.blogspot.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "push": "git add . && git commit -m 'update' && git push -u origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkadebug/quzeiy.blogspot.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkadebug/quzeiy.blogspot.com/issues"
+  },
+  "homepage": "https://github.com/nkadebug/quzeiy.blogspot.com#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}

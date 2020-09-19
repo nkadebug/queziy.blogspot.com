@@ -1,8 +1,9 @@
-body{
+body {
   font-family: 'Roboto', sans-serif;
   text-align: justify;
 }
 
+/* Loding overlay and spinner -- Start*/
 #overlay {
   background: white;
   width: 100%;
@@ -10,17 +11,17 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  opacity: .5;
-  z-index:1;
+  opacity: 0.5;
+  z-index: 1;
 }
 
-#loading{
+#loading {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index:1000;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,14 +37,28 @@ body{
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+/* Loding overlay and spinner -- End*/
 
-.jump-link{
- display:none !important;
+/* Post Type Question -- Start */
+.question-container {
 }
-
-.list-group-item-action{
-cursor:pointer;
+.question {
 }
+.options {
+}
+.option {
+}
+.solution {
+}
+.answer {
+}
+.explanation {
+}
+/* Post Type Question -- End */
