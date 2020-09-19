@@ -1,3 +1,5 @@
+//Version 20.09.19.005
+
 var pageType, prevLink, currLink, nextLink;
 const htmlCache = {};
 const jsonCache = {};
