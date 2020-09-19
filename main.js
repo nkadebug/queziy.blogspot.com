@@ -40,10 +40,8 @@ function getHtml(url,cb) {
   
   if (!htmlCache[url]) {
     console.log("getHtml", "Fetching...", url);
-	$('#overlay, #loading').show();
     fetch(url).then(res=>res.text()).then(function (resp) {
       htmlCache[url] = $(resp).filter("#main").html();
-	  $('#overlay, #loading').hide();
 	  cb(htmlCache[url]);
     });
   } else {
@@ -54,9 +52,11 @@ function getHtml(url,cb) {
 
 function showHtml(url,title){
 	url = url.replace('?m=1','').replace('&m=1','');
+	$('#overlay, #loading').show();
 	getHtml(url,function(htm){
 		history.pushState(url,title,url);
 		$("#main").html(htm);
+		$('#overlay, #loading').hide();
 	});
 }
 
