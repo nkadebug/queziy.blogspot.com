@@ -1,4 +1,4 @@
-let pageType, prevLink, currLink, nextLink,
+let temp, pageType, prevLink, currLink, nextLink,
     htmlCache = {},
     jsonCache = {};
 

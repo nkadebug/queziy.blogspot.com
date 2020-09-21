@@ -1,6 +1,7 @@
 "use strict";
 
-var pageType,
+var temp,
+    pageType,
     prevLink,
     currLink,
     nextLink,
