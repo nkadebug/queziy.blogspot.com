@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nkadebug/quzeiy.blogspot.com#readme",
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "dexie": "^3.0.2"
   }
 }
